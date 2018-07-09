@@ -33,7 +33,24 @@
             .addMore:hover{
               transition-delay: 0s;
             }
-       </style>
+
+            .flip {
+                height: 226.656px;
+                width: 340px;
+                margin: 0 auto;
+            }
+            .flip img {
+                width: 340px;
+                height: auto;
+            }
+            .flip .back {
+                background: #43a3d8;
+                color: #ffffff;
+                text-align: center;
+
+            }
+
+            </style>
 
     </head>
     <body id="hackmind">
@@ -252,6 +269,7 @@ In preparation towards your ICO we will support you on the following challenges:
             <h2>Life at Hackmind</h2>
             <div class="instafeed" data-user-name="hackmind.ai" data-amount="15" data-grid="5"></div>
       </div>
+
 </div>
 </div>
                 <!- - end of container- ->
@@ -268,23 +286,71 @@ In preparation towards your ICO we will support you on the following challenges:
                         <!--end masonry filters-->
                         <div class="masonry__container row">
                             <div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/l0.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>Hackmind studio is open 24/7</p>
+                                    </div> 
+                                    </div>
                             </div>
                             <div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/l7.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>Poster sessions help everyone get to know each other</p>
+                                    </div> 
+                                    </div>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Objects">
+
+<div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/l1.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>1/3 of our founders are females</p>
+                                    </div> 
+                                    </div>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Objects">
+
+<div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/l6.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>Peers support and give feed back to each other</p>
+                                    </div> 
+                                    </div>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+
+<div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/fredie.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>Our youngest founder is 22. Also ex at apple.</p>
+                                    </div> 
+                                    </div>
                             </div>
-                            <div class="masonry__item col-lg-4 col-6" data-masonry-filter="Objects">
+
+<div class="masonry__item col-lg-4 col-6" data-masonry-filter="People">
+                                    <div class="flip">
+                                    <div class="front">
                                     <img alt="Image" class="border--round box-shadow-wide" src="img/batch1.jpg" />
+                                    </div>
+                                    <div class="back border--round box-shadow-wide">
+                                        <p>Samll group discussion on curated topics</p>
+                                    </div> 
+                                    </div>
                             </div>
+
+                           
                         </div>
                         <!--end masonry container-->
                     </div>
@@ -395,12 +461,24 @@ In preparation towards your ICO we will support you on the following challenges:
         <script src="js/smooth-scroll.min.js"></script>
         <script src="js/scripts.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106760961-1"></script>
+        <script src="js/jquery.flip.min.js"></script>
+
+
         <script>
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
+
           gtag('config', 'UA-106760961-1');
         </script>
+
+        <script>
+          $(function(){
+              $(".flip").flip({
+                  trigger: 'hover'
+              });
+          });
+          </script>
 
 
     </body>
